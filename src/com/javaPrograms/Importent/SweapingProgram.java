@@ -5,6 +5,7 @@ public class SweapingProgram {
       swap();
         factorial();
         fibonacci();
+        primeNumber();
     }
     public static void swap(){
         int num1=20,num2=50;
@@ -32,5 +33,21 @@ public class SweapingProgram {
            num1=num2;
            num2=num3;
        }
+        System.out.println();
     }
+    public static void primeNumber(){
+        int num=11;
+        int count =0;
+        for(int i=2;i<=num-1;i++){
+            if(num%i==0){
+                count++;
+            }
+        }
+        if(count==0){
+            System.out.println("Prime number..");
+        }else{
+            System.out.println("Not a prime number..");
+        }
+    }
+
 }
