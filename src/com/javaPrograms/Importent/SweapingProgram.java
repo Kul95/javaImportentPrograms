@@ -4,6 +4,7 @@ public class SweapingProgram {
     public static void main(String[] args) {
       swap();
         factorial();
+        fibonacci();
     }
     public static void swap(){
         int num1=20,num2=50;
@@ -21,5 +22,15 @@ public class SweapingProgram {
           fact=fact*i;
         }
         System.out.println(fact);
+    }
+    public static void fibonacci(){
+       int num1=0,num2=1;
+       int num3;
+       for(int i=0;i<=10;i++){
+           num3=num1+num2;
+           System.out.print("  "+num3);
+           num1=num2;
+           num2=num3;
+       }
     }
 }
