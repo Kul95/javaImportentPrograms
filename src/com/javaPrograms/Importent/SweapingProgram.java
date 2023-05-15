@@ -7,6 +7,7 @@ public class SweapingProgram {
         fibonacci();
         primeNumber();
         reversNumber();
+        palindrom();
     }
     public static void swap(){
         int num1=20,num2=50;
@@ -59,4 +60,18 @@ public static void reversNumber(){
         }
     System.out.println("Reverse number:"+rev);
 }
+public static void palindrom() {
+    int num1 = 1234;
+    int temp;
+    temp=num1;
+    int rev=0;
+    while(temp>0){
+        rev=rev*10+temp%10;
+        temp=temp/10;
 }
+    if(num1==rev){
+        System.out.println(num1+" Palindrom number");
+    }else{
+        System.out.println(num1+" Not a palindrom number");
+    }
+}}
