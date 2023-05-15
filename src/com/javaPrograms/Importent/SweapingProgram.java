@@ -6,6 +6,7 @@ public class SweapingProgram {
         factorial();
         fibonacci();
         primeNumber();
+        reversNumber();
     }
     public static void swap(){
         int num1=20,num2=50;
@@ -49,5 +50,13 @@ public class SweapingProgram {
             System.out.println("Not a prime number..");
         }
     }
-
+public static void reversNumber(){
+        int num=1234;
+        int rev=0;
+        while(num>0){
+            rev=rev*10+num%10;
+            num=num/10;
+        }
+    System.out.println("Reverse number:"+rev);
+}
 }
